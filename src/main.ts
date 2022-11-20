@@ -1,5 +1,4 @@
 import * as Phaser from 'phaser'
-import { SizeRectanglesScene } from './scenes/SizeRectanglesScene'
 
 class PlaygroundScene extends Phaser.Scene {
 
