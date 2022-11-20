@@ -12,5 +12,6 @@ new Phaser.Game({
   scale: {
     mode: Phaser.Scale.ScaleModes.FIT
   },
+  pixelArt: true,
   scene: new PlaygroundScene({})
 })

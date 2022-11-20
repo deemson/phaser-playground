@@ -14,7 +14,7 @@ export class ResizeScene extends Phaser.Scene {
     this.scale.on('resize', this.resize, this)
   }
 
-  resize (gameSize: PhaserSize, baseSize: PhaserSize, displaySize: PhaserSize, width: number, height: number) {
+  resize (gameSize: PhaserSize, baseSize: PhaserSize, displaySize: PhaserSize, previousWidth: number, previousHeight: number) {
     this.cameras.resize(gameSize.width, gameSize.height)
     const x = gameSize.width / 2 - this.label.width / 2
     const y = gameSize.height / 2 - this.label.height / 2
