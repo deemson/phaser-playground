@@ -4,14 +4,18 @@ class PlaygroundScene extends Phaser.Scene {
 
 }
 
-new Phaser.Game({
+const playgroundGameConfig: Phaser.Types.Core.GameConfig = {
   parent: 'phaser-playground',
   type: Phaser.WEBGL,
-  width: 800,
-  height: 600,
+  width: 100,
+  height: 100,
   scale: {
-    mode: Phaser.Scale.ScaleModes.FIT
+    zoom: 4,
+    autoCenter: Phaser.Scale.Center.CENTER_HORIZONTALLY,
+    mode: Phaser.Scale.ScaleModes.NONE
   },
   pixelArt: true,
   scene: new PlaygroundScene({})
-})
+}
+
+new Phaser.Game(playgroundGameConfig)
